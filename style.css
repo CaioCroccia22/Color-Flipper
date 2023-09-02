@@ -12,15 +12,22 @@ body{
     gap: 10rem;
     text-align: center;
     background-color: brown;
+    justify-content: center;
 }
 
 
 div{
+
     display: flex;
     gap: 1.5rem;
     justify-content: center;
     
 }
-h1{
-   
+
+
+button{
+
+    width: 10rem;
+    align-items: center;
+
 }
