@@ -1,6 +1,7 @@
 *{
     margin: 0;
     padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 body{
@@ -13,10 +14,11 @@ body{
     text-align: center;
     background-color: brown;
     justify-content: center;
+    color: aliceblue;
 }
 
 
-div{
+div:nth-of-type(1){
 
     display: flex;
     gap: 1.5rem;
@@ -25,9 +27,12 @@ div{
 }
 
 
-button{
+button:nth-of-type(2){
 
+    display: flex;
     width: 10rem;
+    justify-content: center;
     align-items: center;
+    
 
 }

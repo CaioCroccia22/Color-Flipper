@@ -8,5 +8,6 @@ const backColor = document.querySelector("#background");
 
 changeBtn.addEventListener("click", function(){
     console.log("Apertou o botão!!");
-    backColor.style.background = 'green'
+    backColor.style.background = 'green';
+    nameColor.innerHTML = 'Green';
 })
