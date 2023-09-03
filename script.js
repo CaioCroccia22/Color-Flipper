@@ -1,6 +1,6 @@
 //Selecionar os elementos
 
-const colors = ["red", "green","blue", "#f15025" ];
+const colors = ["Red", "Green","Blue", "Orange" ];
 
 
 const btn = document.querySelector("#btn");
@@ -8,7 +8,13 @@ const color = document.querySelector("#name-color");
 
 
 btn.addEventListener("click", function(){
-    console.log("Apertou o botão!!");
-    backColor.style.background = 'green';
-    nameColor.innerHTML = 'Green';
-})
+
+    const randomNumber = getRandomNumber();
+    document.body.style.backgroundColor = colors[randomNumber];
+    color.innerHTML = colors[randomNumber];
+});
+
+function getRandomNumber(){
+    return Math.floor(Math.random() * colors.length);
+}
+
